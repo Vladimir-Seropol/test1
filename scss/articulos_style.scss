@@ -1,0 +1,670 @@
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-100deg);
+    }
+}
+
+.section-articulos {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.articulos__container {
+    max-width: 1440px;
+    margin-top: 182px;
+    position: relative;
+}
+
+//Line Background
+.articulos__line-bg {
+    top: 1265px;
+    
+    // left: -60px;
+}
+
+h2 {
+    font-family: Archivo;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    color: rgba(27, 31, 33, 1);
+    margin-bottom: 14px;
+}
+
+p {
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+    color: rgba(117, 119, 120, 1);
+    margin-bottom: 18px;
+}
+
+img {
+    width: 100%;
+}
+
+//Line
+
+.articulos__line {
+    max-width: 1440px;
+    height: 120px;
+    padding: 0px 35px 0px 32px;
+    transform: rotate(-4deg);
+    margin: 0 auto;
+    background-color: rgba(172, 214, 222, 1);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.articulos__line b {
+    // width: 1440px;
+    padding-left: 100%;
+    display: inline-block;
+    margin: 0 auto;
+    font-family: Archivo;
+    font-size: 58px;
+    font-weight: 900;
+    line-height: 69.6px;
+    letter-spacing: 0.01em;
+    padding: 25px;
+    animation: marquee 9s linear infinite;
+    overflow: hidden;
+}
+
+.articulos__line b svg {
+    vertical-align: middle;
+}
+
+
+//Articulos__carrera
+
+.articulos__carrera {
+    display: flex;
+}
+
+//Articulos__carrera-fashion
+.articulos__carrera-fashion {
+}
+.articulos__carrera-fashion-img {
+    position: relative;
+    max-width: 584px;
+    height: 328px;
+    margin-right: 20px;
+}
+
+.articulos__carrera-fashion:hover .articulos__carrera-fashion-img img:last-child {
+    animation: rotate 1s linear infinite;
+}
+
+.articulos__carrera-fashion-img img:first-child {
+    mask-image: url(../masks/Mask_fashion.svg);
+    mask-repeat: no-repeat;
+    mask-position: 0 20px;
+}
+
+.articulos__carrera-fashion-img img:last-child {
+    position: absolute;
+    top: -30px;
+    left: -40px;
+    width: 31%;
+    transition: all 0.5s ease;
+}
+
+.articulos__carrera-fashion-info {
+    margin: 60px 0 25px 0;
+}
+.articulos__carrera-fashion-info-list {
+    display: flex;
+    align-items: center;
+}
+.articulos__carrera-fashion-info-item {
+    color: rgba(144, 238, 203, 1);
+    cursor: pointer;
+}
+.articulos__carrera-fashion-info-link {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background-color: rgba(144, 238, 203, 1);
+    margin-right: 16px;
+    color: rgba(27, 31, 33, 1);
+    cursor: pointer;
+}
+
+//Articulos__carrera-designer
+
+.articulos__carrera-designer {
+    padding-left: 20px;
+}
+
+.articulos__carrera-designer:hover .articulos__carrera-designer-img img:last-child {
+    animation: rotate 1s linear infinite;
+}
+
+.articulos__carrera-designer-img {
+    position: relative;
+    max-width: 584px;
+    height: 328px;
+}
+
+.articulos__carrera-designer-img img:first-child {
+    // transform: scaleX(-1);
+    mask-image: url(../masks/Mask_designer.svg);
+    mask-repeat: no-repeat;
+    mask-position: 0 20px;
+}
+
+.articulos__carrera-designer-img img:last-child {
+    position: absolute;
+    top: -29px;
+    right: -40px;
+    width: 31%;
+    transition: all 0.5s ease;
+}
+
+.articulos__carrera-designer-info {
+    margin: 60px 0 25px 0;
+}
+.articulos__carrera-designer-info-list {
+    display: flex;
+    align-items: center;
+
+    max-width: 277px;
+}
+.articulos__carrera-designer-info-item {
+    color: rgba(236, 149, 177, 1);
+    cursor: pointer;
+}
+.articulos__carrera-designer-info-link {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background-color: rgba(236, 149, 177, 1);
+    margin-right: 16px;
+    color: rgba(27, 31, 33, 1);
+    cursor: pointer;
+}
+
+//Articulos__carrera-designer2
+
+.articulos__carrera-designer2 {
+    position: relative;
+}
+.articulos__carrera-designer2-img {
+}
+
+.articulos__carrera-designer2:hover .articulos__carrera-designer2-img img:last-child {
+    animation: rotate 1s linear infinite;
+}
+
+.articulos__carrera-designer2-img img:first-child {
+    mask-image: url(../masks/Mask_designer2.svg);
+    mask-repeat: no-repeat;
+    mask-position: 0 135px;
+}
+
+.articulos__carrera-designer2-img img:last-child {
+    position: absolute;
+    top: 85px;
+    right: -40px;
+    width: 15%;
+    transition: all 0.5s ease;
+}
+
+.articulos__carrera-designer2-infomation {
+    position: absolute;
+    right:  153px;
+    top: 1350px;
+    display: flex;
+    gap: 19px;
+    min-height: 181px;
+}
+.articulos__carrera-designer2-information-list {
+    max-width: 376px;
+    padding-top: 26px;
+}
+.articulos__carrera-designer2-info {
+}
+.articulos__carrera-designer2-info-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 22px;
+    margin-bottom: 24px;
+}
+.articulos__carrera-designer2-info-item {
+    color: rgba(236, 149, 177, 1);
+    cursor: pointer;
+}
+.articulos__carrera-designer2-info-link {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background-color: rgba(236, 149, 177, 1);
+    color: rgba(27, 31, 33, 1);
+    cursor: pointer;
+}
+.articulos__carrera-designer2-info-time {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-end;
+    font-family: Nunito;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: rgba(174, 174, 174, 1);
+}
+
+.articulos__carrera-designer2-info-time span svg {
+    vertical-align: middle;
+}
+.articulos__carrera-designer2-info-text {
+    max-width: 792px;
+}
+
+.articulos__carrera-designer2-info-text h2 {
+    font-family: Archivo;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43.2px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+//Articulos_Rebranding
+.articulos__rebranding {
+    display: flex;
+    margin-top: 213px;
+}
+.articulos__rebranding-marketing {
+}
+
+.articulos__rebranding-marketing:hover .articulos__rebranding-marketing-img img:last-child {
+    animation: rotate 1s linear infinite;
+}
+
+.articulos__rebranding-marketing-img {
+    position: relative;
+    max-width: 584px;
+    height: 328px;
+    margin-right: 20px;
+}
+
+.articulos__rebranding-marketing-img img:first-child {
+    mask-image: url(../masks/Mask_marketing.svg);
+    mask-repeat: no-repeat;
+}
+
+.articulos__rebranding-marketing-img img:last-child {
+    position: absolute;
+    top: -75px;
+    left: -55px;
+    width: 46%;
+    transition: all 0.5s ease;
+}
+
+.articulos__rebranding-marketing-info {
+    margin: 40px 0 25px 0;
+}
+.articulos__rebranding-marketing-info-list {
+    display: flex;
+    align-items: center;
+}
+.articulos__rebranding-marketing-info-item {
+    color: rgba(255, 173, 32, 1);
+    cursor: pointer;
+}
+.articulos__rebranding-marketing-info-link {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background-color: rgba(255, 173, 32, 1);
+    margin-right: 16px;
+    color: rgba(27, 31, 33, 1);
+    cursor: pointer;
+}
+
+.gaming__information-info-time {
+}
+
+.articulos__rebranding-autocad {
+    padding-left: 20px;
+}
+
+.articulos__rebranding-autocad-img {
+    position: relative;
+    max-width: 584px;
+    height: 328px;
+    // margin-left: 20px;
+}
+
+.articulos__rebranding-autocad:hover .articulos__rebranding-autocad-img img:last-child {
+    animation: rotate 1s linear infinite;
+}
+
+.articulos__rebranding-autocad-img img:first-child {
+    mask-image: url(../masks/Mask_software..svg);
+    mask-repeat: no-repeat;
+}
+
+.articulos__rebranding-autocad-img img:last-child {
+    position: absolute;
+    top: -50px;
+    right: -40px;
+    width: 31%;
+    transition: all 0.5s ease;
+}
+
+.articulos__rebranding-autocad-img img:last-child:hover {
+    transform: rotate(-100deg);
+}
+
+.articulos__rebranding-autocad-info {
+    margin: 40px 0 25px 0;
+}
+.articulos__rebranding-autocad-info-list {
+    display: flex;
+    align-items: center;
+}
+.articulos__rebranding-autocad-info-item {
+    color: rgba(172, 214, 222, 1);
+    cursor: pointer;
+}
+.articulos__rebranding-autocad-info-link {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background-color: rgba(172, 214, 222, 1);
+    margin-right: 16px;
+    color: rgba(27, 31, 33, 1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+    .articulos__container {
+        padding: 0 32px;
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+    .articulos__carrera-designer2-info-text h2 {
+        font-size: 26px;
+        line-height: 31.2px;
+    }
+    .articulos__carrera-fashion-img img:last-child {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 18%;
+    }
+    .articulos__carrera-designer-img img:last-child {
+        top: 0;
+        right: 0;
+        width: 18%;
+    }
+    .articulos__carrera-designer2-img img:last-child {
+        top: 130px;
+        right: 10px;
+        width: 15%;
+    }
+    .articulos__rebranding-marketing-img img:last-child {
+        top: 0;
+        left: 70%;
+        width: 20%;
+    }
+    .articulos__rebranding-autocad-img img:last-child {
+        top: 0;
+        right: 30px;
+        width: 18%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .articulos__carrera {
+        max-width: 704px;
+        margin: 0 auto;
+    }
+
+    .sticky span {
+        position: sticky;
+    }
+    .articulos__carrera-fashion{
+        max-width: 340px;
+    }
+    .articulos__carrera-fashion h2{
+        
+        br{
+            display: none;
+        }
+    }
+
+    .articulos__carrera-fashion,
+    .articulos__carrera-designer p{
+        
+        br{
+            display: none;
+        }
+    }
+
+    .articulos__carrera-fashion-img,
+    .articulos__carrera-designer-img {
+        margin: 0;
+        height: 226px;
+    }
+    .articulos__carrera-fashion-img img:first-child {
+        mask-image: url(../masks/Mask_fashion2.svg);
+        mask-repeat: no-repeat;
+        mask-position: 0 -1px;
+    }
+
+    .articulos__carrera-fashion-img img:last-child {
+        top: 6px;
+        left: 228px;
+        width: 30.8%;
+    }
+
+    .articulos__carrera-fashion-info,
+    .articulos__carrera-designer-info {
+        margin: 29px 0 25px 0;
+    }
+
+ 
+
+    .articulos__carrera-designer {
+        padding-left: 24px;
+    }
+    .articulos__carrera-designer-img img:first-child {
+        mask-image: url(../masks/Mask_designer1.2.svg);
+        mask-repeat: no-repeat;
+        mask-position: 0 -1px;
+    }
+
+    .articulos__carrera-designer-img img:last-child {
+        top: 6px;
+        right: 7px;
+        width: 30.8%;
+    }
+
+    .articulos__carrera-designer2 {
+        max-width: 704px;
+        margin: 0 auto;
+        // margin-top: 120px;
+    }
+    .articulos__carrera-designer2-img {
+        max-width: 704px;
+        // margin-top: 120px;
+    }
+    .articulos__carrera-designer2-img img:first-child {
+        mask-image: url(../masks/Mask_desinger2.2.svg);
+        mask-repeat: no-repeat;
+        mask-position: 0 102px;
+    }
+    .articulos__carrera-designer2-img img:last-child {
+        top: 110px;
+        right: 8px;
+        width: 17%;
+    }
+
+    .articulos__carrera-designer2-img {
+        width: 1026px;
+    }
+    .articulos__carrera-designer2-img img {
+        margin: 0 auto;
+    }
+
+    .articulos__carrera-designer2-infomation h2{
+       width: 461px;
+    }
+
+    .articulos__carrera-designer2-infomation {
+        width: 704px;
+        left: 80px;
+        top: 1002px;
+        display: flex;
+        gap: 25px;
+    }
+
+.articulos__carrera-designer2-information-list{
+    max-width: 219px;
+    padding: 9px 0px 0 0;
+}
+
+
+.articulos__carrera-designer2-info-text{
+    max-width: 461px;
+}
+    .articulos__carrera-designer2-info-text h2 {
+font-size: 26px;
+line-height: 31.2px;
+    }
+
+    .articulos__carrera-designer2-info-text br{
+        display: none;
+    }
+
+    .articulos__rebranding {
+        max-width: 704px;
+        margin: 0 auto;
+        margin-top: 300px;
+        margin-bottom: 267px;
+    }
+
+    .articulos__rebranding-autocad,
+    .articulos__rebranding-marketing{
+        max-width: 345px;
+    }
+    .articulos__rebranding-marketing-img,
+    .articulos__rebranding-autocad-img {
+        margin: 0;
+        height: 226px;
+    }
+    .articulos__rebranding-marketing-img img:first-child {
+        mask-image: url(../masks/Mask_marketing1.svg);
+        mask-repeat: no-repeat;
+        mask-position: 0 -8px;
+    }
+
+    .articulos__rebranding-marketing-img img:last-child {
+        top: -15px;
+        left: 179px;
+        width: 48%;
+        transform: rotate(15deg);
+    }
+
+    .articulos__rebranding-marketing-info,
+    .articulos__rebranding-autocad-info {
+        margin: 23px 0 23px 0;
+    }
+
+    .articulos__rebranding-autocad {
+        padding-left: 24px;
+    }
+    .articulos__rebranding-autocad-img img:first-child {
+        mask-image: url(../masks/Mask_autocad1.svg);
+        mask-repeat: no-repeat;
+        mask-position: 0 -8px;
+    }
+
+    .articulos__rebranding-autocad-img img:last-child {
+        top: 0px;
+        right: 7px;
+        width: 30.6%;
+    }
+    
+   
+    .articulos__rebranding-marketing h2{
+br {
+    display: none;
+}
+    }
+    .articulos__rebranding-autocad,
+    .articulos__rebranding-marketing p{
+        br{
+            display: none;
+        }
+    }
+
+
+
+
+
+
+
+    .section__articulos {
+        margin: 93px 0;
+    }
+
+    .articulos__line {
+        height: 80px;
+        transform: rotate(-3deg);
+    }
+    .articulos__line b {
+        padding: 15px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .section__articulos {
+        margin: 32px auto;
+    }
+
+    .articulos__line {
+        // margin-top: 1227px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    // .articulos__line{
+    //     margin: 108px 0;
+    // }
+}
