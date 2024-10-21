@@ -24,8 +24,8 @@ const errorMessage = document.getElementById('error-message');
 const errorIcon = document.querySelector('.error-icon');
 const successIcon = document.querySelector('.success-icon');
 const subscribeCheckbox = document.getElementById('checkbox'); 
-const successBlock = document.querySelector('.suscribiete__newsletter-form-block-success'); // Блок успеха
-const newsletterForm = document.getElementById('newsletterForm'); // Форма
+const successBlock = document.querySelector('.suscribiete__newsletter-form-block-success'); 
+const newsletterForm = document.getElementById('newsletterForm'); 
 
 // Проверка email при вводе
 emailInput.addEventListener('input', function() {
@@ -34,13 +34,13 @@ emailInput.addEventListener('input', function() {
     if (!emailPattern.test(emailInput.value)) {
         errorMessage.style.display = 'block'; 
         emailInput.classList.add('error'); 
-        emailInput.classList.remove('success'); // Удаляем класс успеха
+        emailInput.classList.remove('success');
         errorIcon.style.display = 'block';
         successIcon.style.display = 'none'; 
     } else {
         errorMessage.style.display = 'none'; 
         emailInput.classList.remove('error'); 
-        emailInput.classList.add('success'); // Добавляем класс успеха
+        emailInput.classList.add('success'); 
         errorIcon.style.display = 'none'; 
         successIcon.style.display = 'block'; 
     }
@@ -48,25 +48,25 @@ emailInput.addEventListener('input', function() {
 
 // Обработка отправки формы
 newsletterForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Отменяем стандартное поведение отправки формы
+    event.preventDefault(); 
 
     if (errorMessage.style.display === 'block') {
-        return; // Если есть ошибка, выходим из функции
+        return; 
     } 
 
-    // Здесь вы можете добавить логику для отправки данных на сервер, если нужно
+    //  логика для отправки данных на сервер
 
-    // Плавное исчезновение формы
+    
     newsletterForm.style.opacity = 0; 
 
     setTimeout(() => {
-        newsletterForm.style.display = 'none'; // Скрываем форму после завершения анимации
-        successBlock.classList.add('show'); // Показываем блок успеха
-    }, 500); // Время соответствует времени перехода в CSS
+        newsletterForm.style.display = 'none';
+        successBlock.classList.add('show'); 
+    }, 500); 
 
     // Очищаем форму
     emailInput.value = ''; 
     subscribeCheckbox.checked = false; 
     successIcon.style.display = 'none'; 
-    emailInput.classList.remove('success'); // Убираем класс успеха после очистки
+    emailInput.classList.remove('success'); 
 });
