@@ -17,12 +17,15 @@
 .section-articulos {
   width: 1440px;
   margin: 0 auto;
+  margin-bottom: 100px;
+  position: relative;
 }
 
 .articulos__container {
   max-width: 1440px;
   margin-top: 182px;
   position: relative;
+  margin-bottom: 205px;
 }
 
 .articulos__line-bg {
@@ -54,7 +57,7 @@ img {
 }
 
 .articulos__line {
-  max-width: 1440px;
+  width: 100vw;
   height: 120px;
   padding: 0px 35px 0px 32px;
   transform: rotate(-4deg);
@@ -555,8 +558,8 @@ img {
   .articulos__rebranding {
     max-width: 704px;
     margin: 0 auto;
-    margin-top: 300px;
-    margin-bottom: 267px;
+    margin-top: 303px;
+    margin-bottom: 285px;
   }
   .articulos__rebranding-autocad,
   .articulos__rebranding-marketing {
@@ -576,7 +579,7 @@ img {
             mask-position: 0 -8px;
   }
   .articulos__rebranding-marketing-img img:last-child {
-    top: -15px;
+    top: -19px;
     left: 179px;
     width: 48%;
     transform: rotate(15deg);
@@ -597,9 +600,9 @@ img {
             mask-position: 0 -8px;
   }
   .articulos__rebranding-autocad-img img:last-child {
-    top: 0px;
-    right: 7px;
-    width: 30.6%;
+    top: -2px;
+    right: -8px;
+    width: 34%;
   }
   .articulos__rebranding-marketing h2 br {
     display: none;

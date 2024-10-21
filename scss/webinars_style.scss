@@ -1,10 +1,11 @@
 .section-webinars {
     max-width: 1440px;
-min-height: 863px;
-
+min-height: 700px;
+top: -160px;
+padding: 128px 0 178px 0;
 
     margin: 0 auto;
-    margin-top: 205px;
+    margin-top: 36px;
     background-color: rgba(27, 31, 33, 1);
     position: relative;
 }
@@ -14,16 +15,17 @@ background-color: rgba(255, 173, 32, 1);
 position: relative;
 transform: rotate(-3deg);
 top: -50px;
-
+overflow: hidden;
+z-index: 1  ;
+// opacity: 0;
 }
 .webinars-line-bg {
     position: absolute;
-overflow: hidden;
-}
-
-.webinars-container {
+top: 0;
+left: 0;
 
 }
+
 
 .webinars__gratuitos{
     display: flex;
@@ -79,14 +81,10 @@ transition: all 0.2s ease;
     flex: 1;
 }
 .webinars__card {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
     position: relative;
     max-width: 376px;
     height: 432px;
-    padding: 32px;
-    // gap: 12px;
+    padding: 39px 33px;
     border-radius: 32px;
     
 
@@ -104,16 +102,17 @@ padding: 7.16px 6.07px 7.16px 6.07px;
 .webinars__card-title {
     display: flex;
     height: 93px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     img{
         width: 64px;
         height: 64px;
+        margin-top: -4px;
     }
 }
 .webinars__card-title-name {
     padding: 0 20px;
     h4{
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         font-family: Archivo;
         font-size: 26px;
         font-weight: 400;
@@ -129,13 +128,12 @@ font-weight: 500;
 line-height: 21px;
 text-align: left;
 color: rgba(252, 250, 249, 1);
-
             }
 }
 .webinars__card-review {
     max-width: 312px;
     height: 144px;
-    margin-bottom: 37px;
+    margin-bottom: 40px;
     h2{
 font-family: Archivo;
 color: rgba(252, 250, 249, 1);        
@@ -145,7 +143,7 @@ color: rgba(252, 250, 249, 1);
 .webinars__card-info {
     display: flex;
     gap: 26px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 font-family: Nunito;
 font-size: 15px;
 font-weight: 500;
@@ -186,26 +184,31 @@ margin-right: 5px;
 
 @media screen and (max-width: 1000px) {
 
-
+    .line-webinars {
+        top: -66px;
+        
+    }
     .section-webinars{
          min-height: 1040px;
+         padding: 128px 0 160px 0;
       
     }
     .webinars-container{
-        margin-top: 36px;
+        margin-top: 14px;
     }
    
     .webinars__cards{
         flex-wrap: wrap; 
         justify-content: center; 
         gap: 24px;
+        // margin-bottom: 90px;
         // padding: 24px ;
        
     }
      
     .webinars__card {
         max-width: 340px; 
-        padding: 25px;
+        padding: 30px 24px;
         height: 372px;
     }
 

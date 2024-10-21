@@ -12,7 +12,7 @@ main{
 .line-bg {
     position: absolute;
     top: 55px;
-    max-width: 100%;
+    max-width: 70%;
     z-index: -1;
 }
 .gaming-container {
@@ -145,6 +145,7 @@ main{
     .section-gaming {
         padding: 0;
         min-height: 743px;
+        margin-bottom:90px;
     }
     .gaming-container {
         margin: 0 auto;

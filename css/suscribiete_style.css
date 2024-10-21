@@ -11,9 +11,9 @@
 }
 
 .line-suscribiete {
-  width: 100%;
-  position: absolute;
-  top: -25px;
+  z-index: 1;
+  position: relative;
+  top: -233px;
   margin: 0 auto;
   overflow: hidden;
   background: rgb(254, 109, 68);
@@ -24,7 +24,8 @@
 }
 
 .suscribiete-container {
-  padding-top: 227px;
+  position: relative;
+  top: -100px;
 }
 
 .suscribiete__newsletter {
@@ -37,9 +38,9 @@
 
 .suscribiete__newsletter-line-bg {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   overflow: hidden;
-  top: 250px;
+  top: 0px;
   left: 310px;
   width: 60%;
 }
@@ -52,7 +53,7 @@
 }
 
 .suscribiete__newsletter-form-info {
-  height: 195px;
+  height: 197px;
 }
 .suscribiete__newsletter-form-info h3 {
   font-family: Archivo;
@@ -61,6 +62,7 @@
   line-height: 43.2px;
   text-align: left;
   color: rgb(252, 250, 249);
+  padding-bottom: 10px;
 }
 .suscribiete__newsletter-form-info p {
   font-family: Nunito;
@@ -69,7 +71,6 @@
   line-height: 28.8px;
   text-align: left;
   color: rgb(252, 250, 249);
-  margin: 0;
 }
 
 .suscribiete__newsletter-form-block-form {
@@ -155,6 +156,8 @@
   color: rgb(252, 250, 249);
   border: none;
   transition: all 0.2s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .suscribiete__newsletter-form-block-button:hover {
@@ -243,9 +246,6 @@
   transition: all 0.5s ease;
   margin-top: 70px;
 }
-.suscribiete__newsletter-form-block-success img {
-  width: auto;
-}
 .suscribiete__newsletter-form-block-success :last-child {
   position: absolute;
   top: -60px;
@@ -260,6 +260,7 @@
 
 .suscribiete__newsletter-imeges img {
   position: relative;
+  z-index: 1;
   width: auto;
 }
 .suscribiete__newsletter-imeges :nth-child(2) {
@@ -290,12 +291,22 @@
   }
 }
 @media (max-width: 1000px) {
+  .line-suscribiete {
+    top: -215px;
+  }
+  .section-suscribiete {
+    margin: 0 auto;
+    height: 477px;
+    top: 0;
+  }
   .suscribiete-container {
-    padding: 175px 32px 109px 32px;
+    padding: 20px 32px 109px 32px;
+    top: -115px;
   }
   .suscribiete__newsletter {
     display: flex;
     background-image: url(../images/Banner-shape_768.png);
+    background-repeat: no-repeat;
   }
   .suscribiete__newsletter-imeges :nth-child(1) {
     display: none;
@@ -307,8 +318,12 @@
     gap: 24px;
   }
   .suscribiete__newsletter-form {
-    padding: 40px 0 40px 24px;
+    padding: 40px 0 0px 24px;
     margin: 0 auto;
+    gap: 45px;
+  }
+  .suscribiete__newsletter-form-info p {
+    margin-top: -8px;
   }
   .suscribiete__newsletter-form-block-form-checkbox {
     font-size: 13px;
