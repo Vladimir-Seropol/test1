@@ -12,7 +12,7 @@ main{
 .line-bg {
     position: absolute;
     top: 55px;
-    max-width: 70%;
+   
     z-index: -1;
 }
 .gaming-container {
@@ -186,7 +186,7 @@ main{
     }
     .gaming__information-list {
         flex-direction: column;
-        // padding: 4px 0;
+       
     }
 
     .gaming__information-item {
@@ -195,9 +195,7 @@ main{
         justify-content: end;
     }
 
-    // .gaming__information-item:first-child{
-    //     margin: 8px 0;
-    // }
+  
 
     .gaming__information-link {
         margin-right: 0;
@@ -290,8 +288,12 @@ main{
 }
 
 @media screen and (max-width: 383px) {
- 
-    .gaming__button {
-       width: 100%;
+ .section-gaming{
+    margin-bottom: 23px;
+ }
+    
+    .gaming__button{
+        margin: 50px 0 0 0;
+        width: 100%;
     }
 }

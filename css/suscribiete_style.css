@@ -336,3 +336,64 @@
     max-width: 288px;
   }
 }
+@media screen and (max-width: 700px) {
+  .suscribiete-container {
+    height: 1320px;
+    padding: 0;
+    top: 0;
+    margin: 0 auto;
+    top: -98px;
+  }
+  .line-suscribiete {
+    transform: rotate(4deg);
+    top: -181px;
+  }
+  .suscribiete__newsletter {
+    max-width: 304px;
+    flex-direction: column;
+    gap: 80px;
+    position: static;
+    margin: 0 auto;
+    background-image: url(../images/Banner-shape_320.png);
+    background-repeat: no-repeat;
+  }
+  .suscribiete__newsletter-form {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 8px 0 30px;
+  }
+  .suscribiete__newsletter-form h3 {
+    margin-bottom: 0;
+  }
+  .suscribiete__newsletter-form-info {
+    margin-bottom: 18px;
+  }
+  .suscribiete__newsletter-imeges :nth-child(2) {
+    display: none;
+  }
+  .suscribiete__newsletter-imeges :nth-child(3) {
+    display: block;
+  }
+  .suscribiete__newsletter-form-block-form-input {
+    width: 100%;
+    gap: 8px;
+  }
+  .suscribiete__newsletter-form-block-form-input button,
+  .suscribiete__newsletter-form-block-form-input input {
+    width: 256px;
+  }
+  .suscribiete__newsletter-form-block-form {
+    left: -6px;
+  }
+  .suscribiete__newsletter-form-block-form-checkbox {
+    margin-top: -7px;
+  }
+  .suscribiete__newsletter-form-block-form-checkbox p {
+    font-size: 13px;
+    line-height: 18.2px;
+  }
+  .suscribiete__newsletter-imeges img {
+    top: -20px;
+  }
+}

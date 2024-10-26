@@ -8,7 +8,7 @@ window.addEventListener('scroll', function() {
 
     if (scrollTop > lastScrollTop) {
        
-        header.style.transform = 'translateY(-150%)'; 
+        header.style.transform = 'translateY(-170%)'; 
     } else {
         
         header.style.transform = 'translateY(0)'; 
@@ -54,7 +54,7 @@ newsletterForm.addEventListener('submit', function(event) {
         return; 
     } 
 
-    //  логика для отправки данных на сервер
+ 
 
     
     newsletterForm.style.opacity = 0; 
@@ -69,4 +69,38 @@ newsletterForm.addEventListener('submit', function(event) {
     subscribeCheckbox.checked = false; 
     successIcon.style.display = 'none'; 
     emailInput.classList.remove('success'); 
+});
+
+
+
+
+
+        //Аккордеон
+
+document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        const parent = header.parentElement;
+
+       
+        if (window.innerWidth < 700) {
+
+            // Закрываем все остальные аккордеоны
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                if (item !== content) {
+                    item.style.display = 'none';
+                    item.parentElement.classList.remove('active');
+                }
+            });
+
+            // Переключаем видимость текущего аккордеона
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                parent.classList.remove('active');
+            } else {
+                content.style.display = 'block';
+                parent.classList.add('active');
+            }
+        }
+    });
 });

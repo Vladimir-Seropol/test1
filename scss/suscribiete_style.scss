@@ -9,7 +9,7 @@
 
 .section-suscribiete {
     position: relative;
-    // margin-bottom: 100px;
+    
     
 }
 
@@ -26,7 +26,7 @@
     b {
         animation: marquee-back 9s linear infinite;
     }
-    // opacity: 0;
+  
 }
 
 
@@ -59,14 +59,14 @@
 .suscribiete__newsletter-form {
     display: flex;
     flex-direction: column;
-    // justify-content: space-around;
+ 
     gap: 87px;
     padding: 64px 48px 64px 104px;
 }
 
 .suscribiete__newsletter-form-info {
     height: 197px;
-    // padding-right: 10px;
+   
     h3 {
         font-family: Archivo;
         font-size: 36px;
@@ -338,7 +338,6 @@ color: rgba(255, 255, 255, 1);
 .section-suscribiete{
     margin: 0 auto;
     height: 477px;
-    // position: relative;
     top: 0;
 }
     .suscribiete-container{
@@ -384,9 +383,85 @@ line-height: 18.2px;
     }
     
     .suscribiete__newsletter-imeges{
-        // padding-left: 50px;
+
         max-width: 288px;
     }
 
    
+}
+
+@media screen and (max-width: 700px) {
+    
+    .suscribiete-container{
+   
+        height: 1320px;
+        padding: 0;
+        top: 0;
+        margin: 0 auto;
+        top: -98px;
+    }
+
+    .line-suscribiete{
+        transform: rotate(4deg);
+        top: -181px;
+    }
+    .suscribiete__newsletter{
+        
+        max-width: 304px;
+        flex-direction: column;
+        gap: 80px;
+          position: static;
+      margin: 0 auto;
+        background-image: url(../images/Banner-shape_320.png);
+        background-repeat: no-repeat;
+    }
+    .suscribiete__newsletter-form{
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+        padding: 70px 8px 0 30px;
+        
+        h3 {
+            margin-bottom: 0;
+        }
+    }
+
+    .suscribiete__newsletter-form-info{
+        margin-bottom: 18px;
+    }
+    .suscribiete__newsletter-imeges{
+        :nth-child(2){
+            display: none;
+        }
+        :nth-child(3){
+            display: block;
+        }
+    }
+    .suscribiete__newsletter-form-block-form-input{
+        width: 100%;
+        gap: 8px;
+        button,
+        input{
+            width: 256px;
+        }
+    }
+
+    .suscribiete__newsletter-form-block-form{
+        left: -6px;
+    }
+    .suscribiete__newsletter-form-block-form-checkbox{
+        margin-top: -7px;
+        p{
+font-size: 13px;
+line-height: 18.2px;
+        }
+    }
+ 
+
+    .suscribiete__newsletter-imeges{
+        img{
+       top: -20px;     
+        }
+        
+    }
 }
