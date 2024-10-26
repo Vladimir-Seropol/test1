@@ -76,6 +76,7 @@
 .suscribiete__newsletter-form-block-form {
   position: relative;
   transition: opacity 0.5s ease;
+  z-index: 20;
 }
 
 #error-message {
@@ -257,7 +258,7 @@
   display: block;
   opacity: 1;
 }
-
+suscribiete__newsletter-form-block-success show
 .suscribiete__newsletter-imeges img {
   position: relative;
   z-index: 1;

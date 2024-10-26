@@ -29,7 +29,7 @@ const newsletterForm = document.getElementById('newsletterForm');
 
 // Проверка email при вводе
 emailInput.addEventListener('input', function() {
-    const emailPattern = /^[^s@]+@[^s@]+.[^s@]+$/;
+    const emailPattern = /^[^@]+@[^s@]+.[^s@]+$/;
 
     if (!emailPattern.test(emailInput.value)) {
         errorMessage.style.display = 'block'; 
